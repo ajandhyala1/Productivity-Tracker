@@ -1,4 +1,7 @@
+// OLD TO DO LIST
+
 // Create a "close" button and append it to each list item
+/*
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -62,4 +65,13 @@ function changeName()
     document.getElementById("ToDoListHeader").innerHTML = newName
   else
     document.getElementById("ToDoListHeader").innerHTML = "My To-Do List"
+}
+
+
+*/
+
+
+function DarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }

@@ -27,7 +27,7 @@
   }
 */
   
-  /*
+
   .button-66 {
     background-color: #0a6bff;
     border-radius: 4px;
@@ -53,6 +53,7 @@
     vertical-align: baseline;
     transition: all .2s cubic-bezier(.22, .61, .36, 1);
     margin-top:60px;
+    
   }
   
   .button-66:hover {
@@ -60,28 +61,24 @@
     transform: translateY(-2px);
   }
   
-  @media (min-width: 768px) {
-    .button-66 {
-      padding: 16px 44px;
-      min-width: 150px;
-    }
-  }
+
   
-*/
+  
 
   /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list 
-ul {
-  margin: 0;
-  padding: 0;
+html{
+  font-family:Poppins;
 }
-*/
-/* Style the list items */
-ul li {
+    
+
+/*
+
+
+#myUL li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -89,32 +86,31 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
 
-  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+
+#myUL li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
-ul li:hover {
+
+#myUL  li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
+
+#myUL  li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
+
+#myUL  li.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -127,7 +123,6 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
 .close {
   position: absolute;
   right: 0;
@@ -140,7 +135,7 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+
 .header {
   background-color: rgb(10, 205, 219);
   padding: 30px 40px;
@@ -148,14 +143,14 @@ ul li.checked::before {
   text-align: center;
 }
 
-/* Clear floats after the header */
+
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
+
 input {
   margin: 0;
   border: none;
@@ -166,7 +161,7 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -183,40 +178,155 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
-h2{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}  
 
+*/
+ 
 
+/* NAVIGATION */
+
+  
 h2:hover{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:black;
   cursor: pointer;
 }
 
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+.center{
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom:30px;
+}
+
+.list-item{
+  float: center;
+}
+
+.nav-bar{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.nav-bar:hover{
+  background-color: greenyellow;
+  color:black;
 }
 
 
+
+.dark-mode {
+  background-color: #36393e;
+  color: white;
+}
+
+.PageHeadings{
+  text-align: center;
+}
+
+/* STICKY NOTE CSS */
+
+html .chalkBoard{
+  background-color: #628a62;
+  height: 600px;
+  border-width:10px;
+border-style:solid;
+border-color:#c98a42;
+padding-top:10px;
+}
+
+.stickyNoteHeading{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.stickyNoteText{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.stickyNoteUL,li{
+  list-style:none;
+}
+.stickyNoteUL{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stickyNoteUL li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+
+.stickyNoteUL li{
+  margin:1em;
+}
+
+
+.stickyNoteUL li:nth-child(even) a{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+.stickyNoteUL li:nth-child(3n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+.stickyNoteUL li:nth-child(5n) a{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+
+.stickyNoteUL li a:hover,.stickyNoteUL li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+
+/*Side Bar*/
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}

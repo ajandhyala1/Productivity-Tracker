@@ -9,10 +9,27 @@
 <button class="button-66" role="button" onclick = "DeleteList()">Delete List</button>
 <button class="button-66" role="button">Modify List</button>
 -->
+ 
+<h1 class = "center" id = "Header">To-Do List Page</h1>  
+<ul class = "navigation">
+  <li class = "list-item"><a class="nav-bar" href="MainHub.html">Back To Hub</a></li>
+  <li  class = "list-item"><a  class="nav-bar"href="Calendar.html">Calendar</a></li>
+  <li  class = "list-item"><a class="nav-bar" href="#contact">Expenses</a></li>
+</ul>
 
 
+<div class = "sidenav">
+  <a href="#">Back To Top</a>
+  <a href="#">Sticky Notes</a>
+  <a href="#">To-Do List</a>
+  
+  <button onclick="DarkMode()" class ="button-66">Toggle dark mode</button>
+</div>
+
+
+<!-- OLD TO-DO LIST
 <div id="myDIV" class="header">
-  <h2 id = "ToDoListHeader" onclick = "changeName()" >My To Do List</h2>
+  <h2 id = "ToDoListHeader" onclick = "changeName()" >Unnamed List</h2>
   <input type="text" id="myInput" placeholder="Title...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
@@ -20,14 +37,62 @@
 <ul id="myUL">
 </ul>
 
+<button class ="button-66">New To-Do List</button>
+-->
 
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div>
+
+
+ <h1 class = "PageHeadings">Sticky Notes<h1>
+
+<ul class = "stickyNoteUL">
+  <li>
+    <a href="#">
+      <h2 class = stickyNoteHeading>Title #1</h2>
+      <p class = "stickyNoteText">Text Content #1</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <h2 class = stickyNoteHeading>Title #2</h2>
+      <p class = "stickyNoteText">Text Content #2</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <h2 class = stickyNoteHeading>Title #3</h2>
+      <p class = "stickyNoteText">Text Content #3</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <h2 class = stickyNoteHeading>Title #4</h2>
+      <p class = "stickyNoteText">Text Content #4</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <h2 class = stickyNoteHeading>Title #5</h2>
+      <p class = "stickyNoteText">Text Content #5</p>
+    </a>
+  </li>
+ 
+</ul>
+
+
+
+<h1 class = "PageHeadings">Standard To-Do List<h1>
+
+
+
+
+
+
+
+
 
 <script src = "ToDoList.js"></script>
 <link rel="stylesheet" href="ToDoList.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
 <style></style>

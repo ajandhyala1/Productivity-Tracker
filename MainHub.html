@@ -8,13 +8,14 @@
 <p class = "center">Click the various buttons to access what you need </p>
 
 
-<ul>
-  <li><a class="nav-bar" href="ToDoList.html">To-Do List.</a></li>
-  <li><a  class="nav-bar"href="#news">Calendar</a></li>
-  <li><a class="nav-bar" href="#contact">Expenses</a></li>
+<ul class = "navigation">
+  <li class = "list-item"><a class="nav-bar" href="ToDoList.html">To-Do List.</a></li>
+  <li  class = "list-item"><a  class="nav-bar"href="Calendar.html">Calendar</a></li>
+  <li  class = "list-item"><a class="nav-bar" href="#contact">Expenses</a></li>
 </ul>
 
-<h1 class = "center">Why It's Important</h1>
+
+<button onclick="DarkMode()">Toggle dark mode</button>
 
 <style>
 #Header{
@@ -27,7 +28,7 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul {
+.navigation{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -35,11 +36,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.list-item{
   float: center;
 }
 
-li a{
+.nav-bar{
   display: block;
   color: white;
   text-align: center;
@@ -53,9 +54,23 @@ li a{
   color:black;
 }
 
+.dark-mode {
+  background-color: #36393e;
+  color: white;
+}
+
+
+
+
+
 
 
 
 </style>
+
+<script>
+
+
+</script>
 </body>
 </html>
