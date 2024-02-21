@@ -53,6 +53,7 @@
     vertical-align: baseline;
     transition: all .2s cubic-bezier(.22, .61, .36, 1);
     margin-top:60px;
+    margin-bottom: 60px;
   }
   
   .button-66:hover {
@@ -69,33 +70,130 @@
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list 
-ul {
-  margin: 0;
-  padding: 0;
+html{
+  font-family:Poppins;
 }
+    
+
+/*
+
+
+#myUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#myUL li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+
+#myUL  li:hover {
+  background: #ddd;
+}
+
+
+#myUL  li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+#myUL  li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.header {
+  background-color: rgb(10, 205, 219);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 4;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
 */
+ 
 
+/* NAVIGATION */
 
-
-
-h2{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}  
+  
 h2:hover{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:black;
   cursor: pointer;
 }
-#Header{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
+
 .center{
   text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .navigation{
   list-style-type: none;
   margin: 0;
@@ -104,22 +202,140 @@ h2:hover{
   background-color: #333;
   margin-bottom:30px;
 }
+
 .list-item{
   float: center;
 }
+
 .nav-bar{
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
 }
+
 .nav-bar:hover{
   background-color: greenyellow;
   color:black;
 }
 
+
+
+.dark-mode {
+  background-color: #36393e;
+  color: white;
+}
+
+.PageHeadings{
+  text-align: center;
+}
+
+/* STICKY NOTE CSS */
+
+html .chalkBoard{
+  background-color: #628a62;
+  height: 600px;
+  border-width:10px;
+border-style:solid;
+border-color:#c98a42;
+padding-top:10px;
+}
+
+.stickyNoteHeading{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.stickyNoteText{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.stickyNoteUL,li{
+  list-style:none;
+}
+.stickyNoteUL{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stickyNoteUL li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+
+.stickyNoteUL li{
+  margin:1em;
+}
+
+
+.stickyNoteUL li:nth-child(even) a{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+.stickyNoteUL li:nth-child(3n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+.stickyNoteUL li:nth-child(5n) a{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+
+.stickyNoteUL li a:hover,.stickyNoteUL li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+
+/*Side Bar*/
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+
+
+/* Calendar CSS*/
 .dark-mode {
   background-color: #36393e;
   color: white;
@@ -160,11 +376,7 @@ h2:hover{
 
 html,
 body {
-    height: 100vh;
-  
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: var(--bg-body);
+    height: 100vh
 }
 .calendar {
     height: max-content;
@@ -176,6 +388,8 @@ body {
     overflow: hidden;
     display: grid;
     place-items: center;
+    left: 41%;
+    right: 50%;
 }
 
 .light .calendar {
@@ -396,3 +610,64 @@ body {
   }
   
 
+
+
+/* Calendar Overlay*/
+#openCalendar{
+  color:white;
+  margin-top:50px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+/*Calendar Heading*/
+#CalendarHeading{
+  color:white;
+  text-align: center;
+  margin-top:50px;
+}
+
+.CalendarParagraph{
+  color:white;
+  text-align: center;
+}
