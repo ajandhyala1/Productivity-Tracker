@@ -1,0 +1,121 @@
+html{
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expenses-list {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  /* NAVIGATION BAR*/
+  h2:hover{
+    color:black;
+    cursor: pointer;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom:30px;
+  }
+  
+  .list-item{
+    float: center;
+  }
+  
+  .nav-bar{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  
+  }
+  
+  .nav-bar:hover{
+    background-color: greenyellow;
+    color:black;
+  }
+  
+  
+  
+  .dark-mode {
+    background-color: #36393e;
+    color: white;
+  }
+  
+  .PageHeadings{
+    margin-top:40px;
+    text-align: center;
+  }

@@ -11,9 +11,10 @@
 -->
  
 <h1 class = "center" id = "Header">To-Do List Page</h1>  
+<p class = "center">Click the various buttons to access what you need </p>
 <ul class = "navigation">
   <li class = "list-item"><a class="nav-bar" href="MainHub.html">Back To Hub</a></li>
-  <li  class = "list-item"><a class="nav-bar" href="#contact">Expenses</a></li>
+  <li  class = "list-item"><a class="nav-bar" href="ExpenseTracker.html">Expenses</a></li>
 </ul>
 
 
@@ -22,11 +23,11 @@
   <a href="#">Sticky Notes</a>
   <a href="#">To-Do List</a>
   
-  <button onclick="DarkMode()" class ="button-66">Toggle dark mode</button>
+  <button onclick="DarkMode()" class ="button-66">Toggle dark mode  <i class="fa fa-moon-o"  style="font-size:30px; margin-left: 5px; " ></i></button>
 
   <div id="myNav" class="overlay">
     <h1 id = "CalendarHeading">Calendar</h1>
-    <p class = "CalendarParagraph">Use the arrow on the far left to change the year</p>
+    <p class = "CalendarParagraph">Use the arrow on the far right to change the year and hover over to the invisible arrow on the right to go backward </p>
     <br>
     <p class = "CalendarParagraph">Click on the month to change the month</p>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -57,58 +58,43 @@
             </div>
             <div class="calendar-days"></div>
         </div>
-       
         <div class="month-list"></div>
-
       </div>
+      
     </div>
     </div>
+    
   </div>
 
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" id = "openCalendar">&#9776; Calendar</span>
   
 
 </div>
+ <h1 class = "PageHeadings">Sticky Notes</h1>
 
-
-<!-- OLD TO-DO LIST
-<div id="myDIV" class="header">
-  <h2 id = "ToDoListHeader" onclick = "changeName()" >Unnamed List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
-
-<ul id="myUL">
-</ul>
-
-<button class ="button-66">New To-Do List</button>
--->
-
-
-
- <h1 class = "PageHeadings">Sticky Notes<h1>
-
+<p class = "center">Sticky notes are used for small reminders. Click on the editable text to make edits on the note. </p>
+<h1>
 <ul class = "stickyNoteUL">
   <li>
-    <a href="#">
+    <a href="#" contenteditable=true>
       <h2 class = stickyNoteHeading>Title #2</h2>
       <p class = "stickyNoteText">Text Content #2</p>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="#"  contenteditable=true>
       <h2 class = stickyNoteHeading>Title #3</h2>
       <p class = "stickyNoteText">Text Content #3</p>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="#" contenteditable=true>
       <h2 class = stickyNoteHeading>Title #4</h2>
       <p class = "stickyNoteText">Text Content #4</p>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="#" contenteditable=true>
       <h2 class = stickyNoteHeading>Title #5</h2>
       <p class = "stickyNoteText">Text Content #5</p>
     </a>
@@ -116,10 +102,18 @@
  
 </ul>
 
+<h1 class = PageHeadings>Standard To-Do List</h1>
+<p class = "center">Type something in the text field and then press the add button to append it to the to-do list.</p>
+<br>
+<p class = "center"> Hover and click the name of the To-Do List to rename it</p>
+<div id="myDIV" class="header">
+  <h2 contenteditable=true>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-
-<h1 class = "PageHeadings">Standard To-Do List<h1>
-
+<ul id="myUL">
+</ul>
 
 
 
@@ -131,6 +125,6 @@
 <script src = "ProductivityTracker.js"></script>
 <link rel="stylesheet" href="ProductivityTracker.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style></style>
