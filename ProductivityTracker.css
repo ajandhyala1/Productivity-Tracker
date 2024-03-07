@@ -388,8 +388,9 @@ body {
     overflow: hidden;
     display: grid;
     place-items: center;
-    left: 41%;
-    right: 50%;
+    margin-left:auto;
+    margin-right:auto; 
+
 }
 
 .light .calendar {
